@@ -1,0 +1,14 @@
+name: "role-criteria-matcher"
+description: "Compares candidate skills, experience years, and project complexity against target role requirements."
+input_schema:
+  type: object
+  properties:
+    role_name:
+      type: string
+      description: "Identifier of the target job role (e.g., Software-Engineering-Intern, Backend-Engineer)."
+    candidate_profile:
+      type: object
+      description: "Parsed candidate profile JSON including education, skills, and projects."
+  required:
+    - role_name
+    - candidate_profile

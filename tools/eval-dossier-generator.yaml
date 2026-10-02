@@ -1,0 +1,28 @@
+name: "eval-dossier-generator"
+description: "Generates comprehensive, explainable hiring evaluation reports with audit trails and cutoff statuses."
+input_schema:
+  type: object
+  properties:
+    candidate_id:
+      type: string
+      description: "Anonymized candidate identifier."
+    composite_score:
+      type: number
+      description: "Overall composite score."
+    sub_scores:
+      type: object
+      description: "Dictionary of dimensional sub-scores."
+    evidence_citations:
+      type: array
+      items:
+        type: string
+      description: "List of evidence citations justifying the score."
+    cutoff_threshold:
+      type: number
+      description: "Baseline filtering cutoff score (default: 25.0)."
+      default: 25.0
+  required:
+    - candidate_id
+    - composite_score
+    - sub_scores
+    - evidence_citations

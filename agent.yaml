@@ -1,0 +1,22 @@
+spec_version: "0.1.0"
+name: "hiring-agent"
+version: "0.1.0"
+description: "Resume-to-Score evaluation pipeline that extracts structured data from PDFs, enriches with GitHub signals, and outputs explainable rankings."
+author: "HackerRank & Interviewstreet Contributors"
+license: "MIT"
+metadata:
+  domain: "Human Resources / Candidate Resume Parsing, GitHub Signal Enrichment & Explainable Evaluation"
+  category: "Human Resources"
+  framework: "HackerRank Hiring Pipeline / PyMuPDF / Gemini / Ollama"
+  language: "Python"
+skills:
+  - "resume-pdf-extraction"
+  - "github-signal-enrichment"
+  - "role-fit-evaluation"
+  - "explainable-hiring-scoring"
+tools:
+  - "resume-parser"
+  - "github-analyzer"
+  - "role-criteria-matcher"
+  - "candidate-scorer"
+  - "eval-dossier-generator"

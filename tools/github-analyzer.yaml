@@ -1,0 +1,14 @@
+name: "github-analyzer"
+description: "Queries GitHub REST API to assess commit velocity, repository quality, code languages, and open source contributions."
+input_schema:
+  type: object
+  properties:
+    github_handle:
+      type: string
+      description: "Candidate GitHub username or profile URL."
+    include_repo_details:
+      type: boolean
+      description: "Whether to fetch detailed statistics for top original repositories."
+      default: true
+  required:
+    - github_handle

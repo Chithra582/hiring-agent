@@ -1,0 +1,25 @@
+name: "candidate-scorer"
+description: "Computes weighted multi-dimensional candidate evaluation scores and ranking percentiles."
+input_schema:
+  type: object
+  properties:
+    education_score:
+      type: number
+      description: "Education sub-score (0-100 scale)."
+    experience_score:
+      type: number
+      description: "Work experience sub-score (0-100 scale)."
+    skills_score:
+      type: number
+      description: "Technical skills match sub-score (0-100 scale)."
+    github_score:
+      type: number
+      description: "GitHub engineering signal sub-score (0-100 scale)."
+    role_weights:
+      type: object
+      description: "Optional custom dimension weighting coefficients."
+  required:
+    - education_score
+    - experience_score
+    - skills_score
+    - github_score
